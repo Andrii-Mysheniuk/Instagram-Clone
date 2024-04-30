@@ -1,0 +1,185 @@
+:root {
+  --padding-inline: 20px;
+}
+
+body {
+  font-family: "Blinker", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--padding-inline);
+}
+
+.header__logo {
+  width: 140px;
+}
+
+.button-login {
+  background-color: #0095f6;
+  color: white;
+}
+
+.button-signup {
+  background-color: white;
+  color: #0095f6;
+}
+
+main {
+  padding-bottom: 58px;
+}
+
+.main__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--padding-inline);
+}
+
+.main__user-info {
+  width: 210px;
+}
+
+.main__user-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.main__user-photo {
+  width: 120px;
+}
+
+.main__user-name {
+  font-size: 22px;
+  margin: 0;
+}
+
+.main__verified-logo {
+  width: 28px;
+  height: 28px;
+  padding-left: 4px;
+}
+
+.button-follow {
+  width: 96px;
+}
+
+.main__description {
+  padding: 20px 20px 40px;
+}
+
+.main__stories-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap; /* Prevent images from wrapping */
+  scrollbar-width: none;
+}
+
+.main__stories {
+  display: inline-flex; /* Display images in a row */
+  padding-inline: var(--padding-inline);
+  padding-bottom: 30px;
+}
+
+.main__story-image {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+.add-story {
+  font-size: 44px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  margin-left: 4px;
+  font-weight: 700;
+}
+
+.active {
+  background-color: #0095f6;
+  color: white;
+}
+
+.main__account-details {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 14px;
+  padding: 8px 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.main__account-info {
+  width: 100px;
+  text-align: center;
+}
+
+.main__account-info p {
+  margin: 0;
+}
+
+.main__account-info-big {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main__account-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-gap: 6px;
+}
+
+.main__account-img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .main__account-images {
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main__account-images {
+    grid-template-columns: repeat(5, 1fr); /* Six columns */
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 0;
+  background-color: white;
+}
+
+.footer__icon {
+  width: 28px;
+  height: 28px;
+}

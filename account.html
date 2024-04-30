@@ -4,11 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="account.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" 
+      rel="stylesheet"
+    >
     <title>Multigram</title>
   </head>
   <body>
-    <h1>Account Page</h1>
+    <header class="header">
+      <a href="feed.html">
+        <img class="header__logo" src="img/instagram-logo-text.png" alt="instagram logo">
+      </a>  
+      
+      <div class="header__buttons">
+        <a href="index.html">
+          <button class="button button-login">Log In</button>
+        </a>
+        <a href="index.html">
+          <button class="button button-signup">Sign Up</button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__user">
+        <img class="main__user-photo" src="img/user-placeholder-img.jpg">
+        <div class="main__user-info">
+          <div class="main__user-title">
+            <p class="main__user-name">Andrii Mysheniuk</p>
+            <img class="main__verified-logo" src="img/verified-logo.jpg" alt="verified logo">
+          </div>
+          <div class="main__user-buttons">
+            <button class="button button-follow">Follow</button>
+            <button class="button button-follow">Message</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__description">
+        <p><strong>Multiverse</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse, dolorem sapient.</p>
+        <a href="https://www.instagram.com">Click here to check</a>
+      </div>
+
+      <div class="main__stories-container">
+        <div class="main__stories">
+          <button class="main__story-image add-story">+</button>
+          <img class="main__story-image" src="img/stories-img.jpg" alt="story image">
+          <img class="main__story-image" src="img/stories-img.jpg" alt="story image">
+          <img class="main__story-image" src="img/stories-img.jpg" alt="story image">
+          <img class="main__story-image" src="img/stories-img.jpg" alt="story image">
+          <!--
+          <img class="main__story-image" src="img/stories-img.jpg" alt="story image">
+          <img class="main__story-image" src="img/stories-img.jpg" alt="story image">
+          <img class="main__story-image" src="img/stories-img.jpg" alt="story image">
+          -->
+        </div>
+      </div>
+
+      <div class="main__account-details">
+        <div class="main__account-info">
+          <p class="main__account-info-big">203</p>
+          <p>posts</p>
+        </div>
+
+        <div class="main__account-info">
+          <p class="main__account-info-big">17.4K</p>
+          <p>posts</p>
+        </div>
+
+        <div class="main__account-info">
+          <p class="main__account-info-big">411</p>
+          <p>following</p>
+        </div>
+      </div>
+
+      <div class="main__account-images">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/new-story-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/new-story-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/new-story-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/new-story-img.jpg" alt="story image">
+        <img class="main__account-img" src="img/stories-img.jpg" alt="story image">
+      </div>
+    </main>
+
+    <footer>
+      <a href="feed.html">
+        <img class="footer__icon" src="/img/icon-home.png" alt="home icon"/>
+      </a>      
+      <img class="footer__icon" src = "/img/icon-search.png" alt = "search icon"/>
+      <img class="footer__icon" src = "/img/icon-plus-symbol-square.png" alt = "add photo icon"/>
+      <img class="footer__icon" src = "/img/icon-video-player.png" alt = "video player icon"/>
+      <img class="footer__icon" src = "/img/icon-placeholder.png" alt = "acoount icon"/>
+    </footer>
 
     <script src="script.js"></script>
   </body>

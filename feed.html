@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Multigram</title>
-  </head>
-  <body>
-    <h1>Feed Page</h1>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="feed.css" />
+  <title>Multigram</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img class="header__logo" src="img/instagram-logo-text.png" alt="Logo">
+    </div>
+    <div class="header__icons">
+      <img class="header__icon" src="img/icon-plus-symbol-square.png" alt="Icon 1">
+      <img class="header__icon" src="img/heart.png" alt="Icon 2">
+    </div>
+  </header>
+
+  <main>
+    <video autoplay muted loop id="video-bg">
+      <source src="img/video-test.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="main__container">
+      <div class="main__user">
+        <a href="account.html">
+          <img class="main__user-photo" src="img/user (1).png">
+        </a>
+        <div class="main__user-info">
+            <a href="account.html" class="main__user-title">
+              <p class="main__user-name">m_andriy_o</p>
+              <img class="main__verified-logo" src="img/verified.png" alt="verified logo">
+            </a>
+          <div class="main__user-details">
+            <p>SZA * Kill Bill (Sped Up Version)</p>
+          </div>
+        </div>
+      </div>
+
+      <img class="main__icon-menu" src="img/Icon-Burger-menu.png" alt="menu icon">
+    </div>
+  </main>
+
+  <section class="icons-section">
+    <div class="icons-section-left">
+      <button class="icon icon-like" onclick="like()"></button>
+      <img class="icon icon-message" src="img/speech-bubble.png" alt="Icon 6">
+      <img class="icon icon-sent" src="img/send.png" alt="Icon 7">
+    </div>
+    <div class="icons-section-right">
+      <img class="icon icon-save" src="img/bookmark.png" alt="Icon 7">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__likes">427 likes</p>
+    <p class="footer__message"><strong>m_andriy_o</strong> would you do this? ...more</p>
+    <p class="footer__comments">View all 21 comments</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
